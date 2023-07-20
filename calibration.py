@@ -18,7 +18,7 @@ images = glob.glob('*.png')
 for fname in images:
     img = cv2.imread(fname)
     gray = img#cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-
+ 
     # Find the chess board corners
     ret, corners = cv2.findChessboardCorners(gray, (12,12),None)
 
